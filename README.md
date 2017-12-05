@@ -24,6 +24,8 @@ Replicar el newsfeed de **Twitter**, como se muestra en la siguiente imagen, con
 
   4. **La sección 3**: Sección donde se pinta el mensaje indicando la hora, esta funcionalidad tambien se realizó con JS.
 
+  //Comnentario de prueba//Cambio/Cambio
+
 ## Diagrama de flujo
 
   ![Diagrama de flujo](https://www.lucidchart.com/publicSegments/view/41e784cd-2c9d-4070-801a-3d00ecbae622/image.jpeg)
