@@ -1,0 +1,307 @@
+/* ++Se muestran elementos en orden de tags > id's > classes, por orden alfabético++ */
+
+/*Removiendo margen y padding del documento con selctor universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Aplicando estilo a vínculos*/
+a {
+  text-decoration: none;
+  color: #6E7F8D;
+  /*Efecto de tiempo de transición con un inicio y un final lentos entre interacciones*/
+  transition: all .2s ease-in-out;
+}
+/*Estilo de vínculos al superponer cursor*/
+a:hover {
+  /*El cursor cambiará su icono por una mano que selecciona*/
+  cursor: pointer;
+  color: #FB8F64;
+}
+/*Estilo de vínculos al superponer cursor*/
+body {
+  background: #c4c4c4;
+  font-family: 'Open Sans', sans-serif;
+  /*Especifica flujo vertical del scroll*/
+  overflow-y: scroll;
+}
+/*Botón dentro del nav*/
+button.twt-btn {
+  /*Bordes redondeados en pixeles*/
+  border-radius: 21px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  background: #FB8F64;
+  /*Presentar en línea con los demás elementos*/
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  height: 32px;
+  padding: 8px 15px 8px 12px;
+  margin: 0;
+  margin-left: 20px;
+  border-style: none;
+  /*Efecto de tiempo de transición con un inicio y un final lentos entre interacciones*/
+  transition: all .3s ease-in-out;
+}
+/*Información de usuario*/
+div.user {
+  /*Presentar en línea con imagen de perfil*/
+  display: inline-block;
+  height: auto;
+  width: 55%;
+  margin: 8px;/
+  *Alineación vertical superior*/
+  vertical-align: top;
+}
+/*Estilo de iconos*/
+i.fa {
+  font-size: 20px;
+  color: #6E7F8D;
+  margin: 0 5px 0 25px;
+  transition: all .2s ease-in-out;
+}
+/*Estilo icono Twitter*/
+i.fa-twitter {
+  font-size: 25px;
+  /*Acento de color a icono de Twitter*/
+  color: #1DA1F2;
+  padding: 5px;
+  margin: 7px 0;
+  /*Alineación centrada como bloque en línea*/
+  text-align: center;
+  display: inline-block;
+  /*Alineación (vertical) a la mitad de arriba a abajo*/
+  vertical-align: middle;
+}
+/*Estilo al superponer cursor sobre iconos*/
+i.fa:hover {
+  cursor: pointer;
+  color: #FB8F64;
+}
+/*Estilo de imagen de perfil*/
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  /*Borde de contorno blanco*/
+  border: 3px solid #fff;
+  display: inline-block;
+}
+/*Márgenes de recuadro para Twittear*/
+input {
+  margin: 15px 0;
+}
+/*Recuadro para buscar en nav*/
+input.search {
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+  /*Width y el height incluyen padding y border */
+  box-sizing: border-box;
+  color: #14171a;
+  display: inline-block;
+  font-size: 12px;
+  height: 32px;
+  line-height: 16px;
+  padding: 8px 32px 8px 12px;
+  transition: all .3s ease-in-out;
+  margin: 0;
+  margin-left: 14%;
+  outline: 0;
+}
+/*Contenedor de nav fijo*/
+nav.fixed-top {
+  backface-visibility: hidden;
+  /*(Explicar)*/
+  border-bottom: 1px solid rgba(0, 0, 0, 0, .5);
+  /*(Explicar)*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /*(Explicar)*/
+  z-index: 1000;
+}
+/*Menú de navegación*/
+div.nav {
+  background: #FFFFFF;
+  /*Relativo con respecto al contenedor padre: nav.fixed-top*/
+  position: relative;
+  bottom: 8px;
+  /*Tan ancho como el padre*/
+  width: 100%;
+  height: 55px;
+  margin-bottom: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/*Párrafo de biografía*/
+p.bio {
+  font-size: 13px;
+  margin-top: 10px;
+  /*(Explicar)*/
+  display: inline-block;
+}
+/*Nombre de usuario en Twitter*/
+p.user-at {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 7px;
+}
+/*Unorganized List con elementos del nav*/
+ul {
+  display: inline-block;
+  margin: 8px 90px;
+  vertical-align: middle;
+  padding: 5px;
+}
+/*Elementos del nav lado izq*/
+ul li {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+}
+/*Contenedor de secciones*/
+#main-container {
+  display: block;
+  height: 100%;
+  background: #E6ECF0;
+  /*(Explicar)*/
+  position: relative;
+  width: 80%;
+  padding: 60px 14px 15px;
+  margin: 0 auto;
+  border: 1px solid rgba(8,8,8,.08);
+}
+/*Primera sección*/
+#section1 {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid rgba(8,8,8,.08);
+  width: 45%;
+  height: 200px;
+  clear: both;
+  background: #FFFFFF;
+}
+/*Segunda sección*/
+#section2 {
+  float: right;
+  display: inline-block;
+  width: 48%;
+  overflow: hidden;
+  vertical-align: top;
+  background: #F5F8FA;
+  padding: 15px;
+  border: 1px solid rgba(8,8,8,.08);
+}
+/*Estilo párrafo de 3ra sección*/
+#section3 p {
+  margin-top: 5px;
+}
+/*Foto perfil pequeña*/
+#small-pic {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  margin-left: 15px;
+  padding: 0;
+  border-radius: 100%;
+  position: relative;
+  top: 10px;
+}
+/*Botón enviar tweet*/
+#submit-tweet {
+  background: #1DA1F2;
+  color: #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  transition: all .3s ease-in-out;
+}
+/*Estilo de botón con superposición de cursor*/
+#submit-tweet:hover {
+  background: gray;
+  border-bottom-style: double;
+}
+/*Margen de tweet publicado*/
+#tweetpublished {
+  margin-bottom: 20px;
+}
+/*Texto con función de contar caracteres*/
+.contador {
+  float: right;
+  /*(Explicar)*/
+  overflow: hidden;
+  display: inline-block;
+  margin: 15px 0;
+  color: blue;
+}
+
+.contador120 {
+  float: right;
+  overflow: hidden;
+  display: inline-block;
+  margin: 15px 0;
+  color: rgb(255, 8, 0);
+}
+
+.contador130 {
+  float: right;
+  overflow: hidden;
+  display: inline-block;
+  margin: 15px 0;
+  color: rgb(0, 255, 30);
+}
+/*Texto que imprime horario del tweet*/
+.dateClass {
+  color: gray;
+  font-size: 12px;
+}
+/*Estilo de Textarea*/
+.myTweet {
+  position: relative;
+  display: block;
+  height: auto;
+  width: 520px;
+  height: auto;
+  line-height: 20px;
+  /*Adorno borde inferior del botón*/
+  border: none;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+}
+/*Div contenedor del tweet creado en js*/
+.newTweet {
+  height: auto;
+  width: 98%;
+  padding: 10px;
+  background: #FFFFFF;
+  margin: 20px 0;
+  /*Borde ligeramente visible con opacidad en canal alpha*/
+  border: 1px solid rgba(8,8,8,.08);
+}
+/*Efecto al superponer cursor sobre recuadro de búsqueda*/
+.search:hover {
+  border: 2px solid #FB8F64;
+}
+/*Efecto al superponer cursor sobre botón para Twittear*/
+.twt-btn:hover {
+  background: #FA743E;
+  border-bottom-style: double;
+}
+/*Marco directo del contenido del nuevo tweet*/
+.tweetcontainer {
+  box-sizing: border-box;
+  height: auto;
+  color: #000;
+  margin: 15px 0;
+  margin-top: 100px;
+  display: block;
+}
+/*No mostrar linea de contorno al seleccionar botones*/
+.twt-btn:focus,
+.myTweet:focus,
+#submit-tweet {
+  outline: none;
+}

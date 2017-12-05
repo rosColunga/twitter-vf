@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--El idioma de la página web-->
+<html lang="es">
+
+<head>
+  <!--El tipo de carácteres-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Se sincroniza el archivo css-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!--Se vincula tipografía-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+  <!--El título de la web page-->
+  <title>Twitter</title>
+</head>
+
+<body>
+  <!-- Añadiendo menú de navegación -->
+  <nav class="fixed-top">
+    <div class="nav">
+      <!-- Unorganized List-->
+      <ul>
+        <!-- List items e iconos-->
+        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a></li>
+        <li><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i>Momentos</a></li>
+        <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i>Notificaciones</a></li>
+        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Mensajes</a></li>
+      </ul>
+      <!-- Icono-logo de Twitter-->
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <input type="search" class="search" placeholder="Buscar en Twitter">
+      <!-- Imagen de perfil en nav-->
+      <img id="small-pic" src="assets/images/profile.png" alt="Laboratoria">
+      <!-- Botón para twittear desde nav-->
+      <button type="button" class="twt-btn" name="button">Twittear</button>
+    </div>
+  </nav>
+  <!-- Contenedor de secciones -->
+  <section id="main-container">
+    <!-- Sección fija con datos del perfil -->
+    <section id="section1">
+      <img src="assets/images/profile.png" alt="">
+      <div class="user">
+        <!-- Nombre de usuario del perfil-->
+        <h2>Laboratoria México</h2>
+        <p class="user-at">@LaboratoriaMX</p>
+        <hr>
+        <!-- Info de contacto extra sobre usuario del perfil-->
+        <p class="bio">Formamos a jóvenes mujeres como las mejores desarrolladoras web y las conectamos con empresas que requieran su talento.</p>
+      </div>
+      <!-- Ubicación, página y seguidores con iconos-->
+      <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+      <p class="bio">CDMX</p>
+      <i class="fa fa-link" aria-hidden="true"></i>
+      <p class="bio"><a href="http://www.laboratoria.la/">laboratoria.la</a></p>
+      <i class="fa fa-user-o" aria-hidden="true"></i>
+      <p class="bio">2,300 followers</p>
+    </section>
+    <!-- Sección con funcionalidad de escribir y enviar tweet -->
+    <section id="section2">
+      <form class="">
+        <textarea class="myTweet" placeholder="¿Qué está pasando?" id="tweetbox" cols="30" rows="10" onkeyup="auto_grow(this)"></textarea>
+        <input type="button" class="send-tweet" class="twt-btn2" id="submit-tweet" value="TWEET">
+        <span class="contador" id="charactercount"></span>
+    </section>
+    <!-- Estuctura de sección a crear con tweet posteado -->
+    <section id="section3">
+      <div class="tweetcontainer">
+        <div id="tweetpublished">
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
